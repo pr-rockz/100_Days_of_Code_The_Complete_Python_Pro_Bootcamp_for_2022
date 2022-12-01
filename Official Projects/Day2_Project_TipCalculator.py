@@ -6,4 +6,6 @@ num_of_people = int(input("How many people to split the bill? "))
 percent_tip = int(input("What percentage tip would you like to give? 10, 12 or 15? "))
 
 bill_per_person = (( (total_bill * percent_tip) / 100) + total_bill)/ num_of_people
+
+# f{:.2f} this rounds the number till two decimal places.
 print(f"Each person should pay: ${bill_per_person:.2f}")
