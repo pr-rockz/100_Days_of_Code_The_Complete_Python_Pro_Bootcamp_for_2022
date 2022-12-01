@@ -1,3 +1,5 @@
+# Prints the days, weeks and years a person has got until he/she turns 90
+
 # 🚨 Don't change the code below 👇
 age = input("What is your current age?")
 # 🚨 Don't change the code above 👆
