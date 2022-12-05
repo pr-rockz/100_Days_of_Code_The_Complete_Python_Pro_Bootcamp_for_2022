@@ -31,7 +31,17 @@ if cross_road == "left":
         elif island == "red":
             print("It's a room full of fire. Game Over.")
         elif island == "yellow":
-            print("You have found the Treasure! You Win!")
+            treasure_colour = input("Now there are 2 chests. One is gold and the other is silver. Which one do you choose?\n").lower()
+            if treasure_colour == "silver":
+                print("You have found the Treasure! You Win!")
+                print("\nNow it's time to decide what to do with it.")
+                treasure = input("You found the Treasure! You can choose to take it or leave it. Type 'take' or 'leave'\n").lower()
+                if treasure == "take":
+                    print("You have taken the Treasure. You are a cheat.\nYou should not take something that is not yours.")
+                elif treasure == "leave":
+                    print("You have left the Treasure. You are such a fool, a dumb and a idiot.\nGET LOST.")
+            else:
+                print("You have opened a chest full of ghosts who sucks your soul. Game Over.")
         else:
             print("You chose a door that doesn't exist. Game Over.")
     else:
